@@ -237,3 +237,5 @@ data/*.pkl
 #   data/MANIFEST.json  - sources and hashes of the downloaded data
 #   data/llm_cache/     - the LLM's answers, so study 7 re-scores without an API key
 #   outputs/            - the published results
+
+blog/
