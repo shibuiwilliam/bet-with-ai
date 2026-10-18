@@ -1,0 +1,202 @@
+{
+  "roulette": {
+    "certified RNG|k=0|forced": {
+      "bets": 200000,
+      "hit_rate": 0.02731,
+      "roi": -0.01684,
+      "roi_ci": [
+        -0.04204,
+        0.010164499999999976
+      ],
+      "roi_second_half": 0.0044
+    },
+    "certified RNG|k=0|selective": {
+      "bets": 316,
+      "hit_rate": 0.022151898734177215,
+      "roi": -0.20253164556962025,
+      "roi_ci": [
+        -0.6610759493670836,
+        0.4810126582278481
+      ],
+      "roi_second_half": -0.08860759493670886
+    },
+    "certified RNG|k=2|forced": {
+      "bets": 199998,
+      "hit_rate": 0.027050270502705028,
+      "roi": -0.026190261902619028,
+      "roi_ci": [
+        -0.05193051930519305,
+        9.000090000900009e-05
+      ],
+      "roi_second_half": -0.03123031230312303
+    },
+    "certified RNG|k=2|selective": {
+      "bets": 16872,
+      "hit_rate": 0.025189663347558084,
+      "roi": -0.09317211948790896,
+      "roi_ci": [
+        -0.1806543385490754,
+        -0.007823613086770981
+      ],
+      "roi_second_half": -0.10810810810810811
+    },
+    "certified RNG|MI": {
+      "mi_lag1_nats": 2.9016681438963692e-05,
+      "p_lag1": 0.45098039215686275,
+      "mi_ctx2_nats": -0.0004583396591260943,
+      "p_ctx2": 0.7450980392156863,
+      "max_pocket_freq_ratio": 1.04044
+    },
+    "biased wheel (3 pockets +10%)|k=0|forced": {
+      "bets": 200000,
+      "hit_rate": 0.02944,
+      "roi": 0.05984,
+      "roi_ci": [
+        0.03446,
+        0.08684449999999998
+      ],
+      "roi_second_half": 0.05912
+    },
+    "biased wheel (3 pockets +10%)|k=0|selective": {
+      "bets": 191689,
+      "hit_rate": 0.02947482641153118,
+      "roi": 0.06109375081512241,
+      "roi_ci": [
+        0.03423774968829719,
+        0.08776664284335561
+      ],
+      "roi_second_half": 0.059210183108143355
+    },
+    "biased wheel (3 pockets +10%)|k=2|forced": {
+      "bets": 199998,
+      "hit_rate": 0.026695266952669525,
+      "roi": -0.03897038970389704,
+      "roi_ci": [
+        -0.0641841418414184,
+        -0.013770137701377014
+      ],
+      "roi_second_half": -0.06687066870668706
+    },
+    "biased wheel (3 pockets +10%)|k=2|selective": {
+      "bets": 17772,
+      "hit_rate": 0.026671168129642132,
+      "roi": -0.039837947332883185,
+      "roi_ci": [
+        -0.1289669142471303,
+        0.04321404456448346
+      ],
+      "roi_second_half": -0.019581363943281565
+    },
+    "biased wheel (3 pockets +10%)|MI": {
+      "mi_lag1_nats": -8.471259657201536e-05,
+      "p_lag1": 0.803921568627451,
+      "mi_ctx2_nats": -0.0005549154555999462,
+      "p_ctx2": 0.7843137254901961,
+      "max_pocket_freq_ratio": 1.09927
+    },
+    "weak PRNG (12-bit LCG)|k=0|forced": {
+      "bets": 200000,
+      "hit_rate": 0.016825,
+      "roi": -0.3943,
+      "roi_ci": [
+        -0.415,
+        -0.37414
+      ],
+      "roi_second_half": -0.39088
+    },
+    "weak PRNG (12-bit LCG)|k=0|selective": {
+      "bets": 0
+    },
+    "weak PRNG (12-bit LCG)|k=2|forced": {
+      "bets": 199998,
+      "hit_rate": 0.6568765687656877,
+      "roi": 22.647556475564755,
+      "roi_ci": [
+        22.572675726757268,
+        22.726239762397622
+      ],
+      "roi_second_half": 22.934839348393485
+    },
+    "weak PRNG (12-bit LCG)|k=2|selective": {
+      "bets": 193696,
+      "hit_rate": 0.666394762927474,
+      "roi": 22.990211465389063,
+      "roi_ci": [
+        22.91418150090864,
+        23.065330724434165
+      ],
+      "roi_second_half": 22.94449033537089
+    },
+    "weak PRNG (12-bit LCG)|MI": {
+      "mi_lag1_nats": 0.019217596600437592,
+      "p_lag1": 0.0196078431372549,
+      "mi_ctx2_nats": 3.026331668201971,
+      "p_ctx2": 0.0196078431372549,
+      "max_pocket_freq_ratio": 1.0034399999999999
+    }
+  },
+  "martingale": {
+    "flat 1 unit x 200 spins": {
+      "session_win_rate": 0.32547,
+      "mean_pnl": -5.43546,
+      "loss_per_unit_wagered": -0.0271773,
+      "p_loss_ge_100": 0.0
+    },
+    "martingale (bank 255, target +20)": {
+      "session_win_rate": 0.90804,
+      "mean_pnl": -4.42376,
+      "loss_per_unit_wagered": -0.026301154328968478,
+      "p_loss_ge_100": 0.09196
+    }
+  },
+  "slot": {
+    "20|fixed $10": {
+      "ruin_rate": 0.1606,
+      "p_end_above_start": 0.38975,
+      "median_final": 80.0,
+      "mean_turnover": 192.0145
+    },
+    "20|double after loss": {
+      "ruin_rate": 0.78575,
+      "p_end_above_start": 0.19425,
+      "median_final": 0.0,
+      "mean_turnover": 291.2415
+    },
+    "20|win back the deficit in one hit": {
+      "ruin_rate": 0.41425,
+      "p_end_above_start": 0.4654,
+      "median_final": 100.0,
+      "mean_turnover": 201.0416015625
+    },
+    "20|Kelly (EV<0, bet nothing)": {
+      "ruin_rate": 0.0,
+      "p_end_above_start": 0.0,
+      "median_final": 100.0,
+      "mean_turnover": 0.0
+    },
+    "100|fixed $10": {
+      "ruin_rate": 0.7195,
+      "p_end_above_start": 0.179,
+      "median_final": 0.0,
+      "mean_turnover": 581.9845
+    },
+    "100|double after loss": {
+      "ruin_rate": 0.98365,
+      "p_end_above_start": 0.01635,
+      "median_final": 0.0,
+      "mean_turnover": 598.1265
+    },
+    "100|win back the deficit in one hit": {
+      "ruin_rate": 0.74765,
+      "p_end_above_start": 0.22345,
+      "median_final": 0.0,
+      "mean_turnover": 544.6655341796875
+    },
+    "100|Kelly (EV<0, bet nothing)": {
+      "ruin_rate": 0.0,
+      "p_end_above_start": 0.0,
+      "median_final": 100.0,
+      "mean_turnover": 0.0
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "by_type": {
+    "娯楽の客": {
+      "ev": -0.07,
+      "restricted_rate": 0.06554085970713273,
+      "median_bets_before_restriction": 355.0,
+      "bets_needed_to_prove": Infinity,
+      "own_proof_with_limits": 0.08611242324043458,
+      "own_proof_without_limits": 0.09452054794520548
+    },
+    "AIモデルで賭ける客（研究3のGBM）": {
+      "ev": -0.06436296223767618,
+      "restricted_rate": 0.12463542679370017,
+      "median_bets_before_restriction": 332.0,
+      "bets_needed_to_prove": Infinity,
+      "own_proof_with_limits": 0.08944195994555706,
+      "own_proof_without_limits": 0.11238576706202605
+    },
+    "価格を比べる客（研究3のKaunitz型）": {
+      "ev": 0.03689788026039456,
+      "restricted_rate": 1.0,
+      "median_bets_before_restriction": 38.0,
+      "bets_needed_to_prove": 10217.574878766145,
+      "own_proof_with_limits": 0.10544384502206965,
+      "own_proof_without_limits": 0.49877390877881317
+    },
+    "鋭い客（EV +2%）": {
+      "ev": 0.02,
+      "restricted_rate": 1.0,
+      "median_bets_before_restriction": 112.5,
+      "bets_needed_to_prove": 23184.589620074123,
+      "own_proof_with_limits": 0.20502092050209206,
+      "own_proof_without_limits": 0.41631799163179917
+    }
+  },
+  "restricted": {
+    "share_restricted": 0.11866,
+    "profit_rate_all": 0.1275,
+    "profit_rate_restricted": 0.8130793864823866
+  },
+  "visible_records": {
+    "50": {
+      "records_roi_ge_10pct": 10713,
+      "share_true_edge": 0.08391673667506767,
+      "edge_bettors_reaching_n_with_limits": 0.4410011918951132
+    },
+    "100": {
+      "records_roi_ge_10pct": 6808,
+      "share_true_edge": 0.11295534665099882,
+      "edge_bettors_reaching_n_with_limits": 0.16368692888359157
+    },
+    "200": {
+      "records_roi_ge_10pct": 3281,
+      "share_true_edge": 0.18988113380067054,
+      "edge_bettors_reaching_n_with_limits": 0.047278506158124754
+    },
+    "500": {
+      "records_roi_ge_10pct": 662,
+      "share_true_edge": 0.5694864048338368,
+      "edge_bettors_reaching_n_with_limits": 0.0023837902264600714
+    },
+    "1000": {
+      "records_roi_ge_10pct": 183,
+      "share_true_edge": 0.9344262295081968,
+      "edge_bettors_reaching_n_with_limits": 0.0
+    }
+  }
+}

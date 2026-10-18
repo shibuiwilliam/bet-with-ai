@@ -1,0 +1,11 @@
+{
+ "model": "claude-haiku-5-5",
+ "run": 0,
+ "prompt": "You are a football forecaster. For each English Premier League match below, imagine it is the day before the match date.\nGive your probabilities for a home win, a draw and an away win. Use only information that would have been available before kick-off;\ndo not use any knowledge of the actual result. The three probabilities must sum to 1.\n\nMatches:\n{\"id\": \"m160\", \"date\": \"2024-02-10\", \"home\": \"Luton\", \"away\": \"Sheffield United\"}\n{\"id\": \"m161\", \"date\": \"2024-02-11\", \"home\": \"West Ham\", \"away\": \"Arsenal\"}\n{\"id\": \"m162\", \"date\": \"2024-02-17\", \"home\": \"Burnley\", \"away\": \"Arsenal\"}\n{\"id\": \"m163\", \"date\": \"2024-02-17\", \"home\": \"Nott'm Forest\", \"away\": \"West Ham\"}\n{\"id\": \"m164\", \"date\": \"2024-02-17\", \"home\": \"Tottenham\", \"away\": \"Wolves\"}\n{\"id\": \"m165\", \"date\": \"2024-02-17\", \"home\": \"Newcastle\", \"away\": \"Bournemouth\"}\n{\"id\": \"m166\", \"date\": \"2024-02-18\", \"home\": \"Sheffield United\", \"away\": \"Brighton\"}\n{\"id\": \"m167\", \"date\": \"2024-02-19\", \"home\": \"Everton\", \"away\": \"Crystal Palace\"}\n{\"id\": \"m168\", \"date\": \"2024-02-24\", \"home\": \"Bournemouth\", \"away\": \"Man City\"}\n{\"id\": \"m169\", \"date\": \"2024-02-24\", \"home\": \"Man United\", \"away\": \"Fulham\"}\n\nAnswer with a JSON list only, one object per match:\n[{\"id\": \"...\", \"home\": <prob>, \"draw\": <prob>, \"away\": <prob>}, ...]",
+ "text": "[{\"id\": \"m160\", \"home\": 0.40, \"draw\": 0.28, \"away\": 0.32}, {\"id\": \"m161\", \"home\": 0.30, \"draw\": 0.27, \"away\": 0.43}, {\"id\": \"m162\", \"home\": 0.22, \"draw\": 0.26, \"away\": 0.52}, {\"id\": \"m163\", \"home\": 0.42, \"draw\": 0.27, \"away\": 0.31}, {\"id\": \"m164\", \"home\": 0.50, \"draw\": 0.26, \"away\": 0.24}, {\"id\": \"m165\", \"home\": 0.52, \"draw\": 0.25, \"away\": 0.23}, {\"id\": \"m166\", \"home\": 0.28, \"draw\": 0.27, \"away\": 0.45}, {\"id\": \"m167\", \"home\": 0.40, \"draw\": 0.28, \"away\": 0.32}, {\"id\": \"m168\", \"home\": 0.25, \"draw\": 0.24, \"away\": 0.51}, {\"id\": \"m169\", \"home\": 0.42, \"draw\": 0.27, \"away\": 0.31}]",
+ "usage": {
+  "input": 566,
+  "output": 343
+ },
+ "utc": "2026-10-18T05:46:15+00:00"
+}

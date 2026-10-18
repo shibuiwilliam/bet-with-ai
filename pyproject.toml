@@ -1,0 +1,59 @@
+[project]
+name = "bet-with-ai"
+version = "0.1.0"
+description = "Programs that test whether AI can win at betting and trading"
+readme = "README.md"
+license = "Apache-2.0"
+requires-python = ">=3.12"
+dependencies = [
+    "numpy",
+    "scipy",
+    "pandas",
+    "scikit-learn",
+    "matplotlib",
+    "anthropic",
+]
+
+[tool.uv]
+package = false
+
+[dependency-groups]
+dev = [
+    "isort>=9.0.2",
+    "pytest>=9.1.1",
+    "ruff>=0.17.1",
+]
+
+[tool.ruff]
+line-length = 120
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E",    # pycodestyle errors
+    "W",    # pycodestyle warnings
+    "F",    # pyflakes
+    "B",    # flake8-bugbear
+    "UP",   # pyupgrade
+    "C4",   # flake8-comprehensions
+    "SIM",  # flake8-simplify
+    "PIE",  # flake8-pie
+    "NPY",  # NumPy-specific rules
+]
+ignore = [
+    "E501",  # the studies write long Japanese sentences to the reports; code lines are wrapped by the formatter
+]
+
+[tool.isort]
+profile = "black"
+line_length = 120
+known_first_party = ["betai"]
+known_local_folder = ["conftest"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+addopts = "-ra"
+markers = [
+    "slow: re-runs a whole study and compares it with the published outputs (deselect with -m 'not slow')",
+]
